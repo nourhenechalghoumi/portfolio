@@ -1,59 +1,76 @@
+import { useState } from "react";
 import { projects } from "@/data/portfolio";
-import { ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 
-const Projects = () => (
-  <section className="container py-12">
-    <p className="font-mono text-sm text-primary mb-2">// projects</p>
-    <h1 className="font-display text-5xl md:text-6xl font-bold mb-4">
-      Things I've <span className="text-gradient">built & shipped</span>.
-    </h1>
-    <p className="text-muted-foreground max-w-2xl text-lg">
-      A selection of projects spanning cloud-native platforms, microservices, full-stack apps and esports.
-    </p>
+const allTags = Array.from(new Set(projects.flatMap((p) => p.tags ?? [])));
 
-    <div className="mt-16 space-y-24">
-      {projects.map((p, i) => (
-        <article
-          key={p.title}
-          className={`grid lg:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""}`}
+const Projects = () => {
+  const [filter, setFilter] = useState<string | null>(null);
+  const visible = filter ? projects.filter((p) => p.tags?.includes(filter)) : projects;
+
+  return (
+    <section className="container py-12">
+      <p className="font-mono text-sm text-primary mb-2">// projects</p>
+      <h1 className="font-display text-5xl md:text-6xl font-bold mb-4 leading-[1.05]">
+        Things I've <span className="text-gradient">built & shipped</span>.
+      </h1>
+      <p className="text-muted-foreground max-w-2xl text-lg">
+        A selection of projects spanning cloud-native platforms, microservices, full-stack apps and esports.
+      </p>
+
+      {/* Filters */}
+      <div className="mt-10 flex flex-wrap gap-2">
+        <button
+          onClick={() => setFilter(null)}
+          className={`text-xs font-mono px-3 py-1.5 rounded-full border transition ${!filter ? "bg-gradient-primary text-primary-foreground border-transparent" : "border-border text-muted-foreground hover:text-foreground"}`}
         >
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-primary opacity-20 blur-3xl rounded-full group-hover:opacity-40 transition-opacity" />
-            <div className="relative glass rounded-3xl overflow-hidden p-2">
-              <img
-                src={p.image}
-                alt={p.title}
-                loading="lazy"
-                width={1280}
-                height={800}
-                className="rounded-2xl w-full aspect-[4/3] object-cover group-hover:scale-[1.02] transition-transform duration-500"
-              />
+          All ({projects.length})
+        </button>
+        {allTags.map((t) => (
+          <button
+            key={t}
+            onClick={() => setFilter(t)}
+            className={`text-xs font-mono px-3 py-1.5 rounded-full border transition ${filter === t ? "bg-gradient-primary text-primary-foreground border-transparent" : "border-border text-muted-foreground hover:text-foreground"}`}
+          >
+            {t}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-14 grid md:grid-cols-2 gap-6">
+        {visible.map((p, i) => (
+          <article key={p.title} className="group relative glass rounded-3xl overflow-hidden hover:border-primary/40 transition-all hover:-translate-y-1">
+            <div className="relative h-64 overflow-hidden">
+              <img src={p.image} alt={p.title} loading="lazy" width={1280} height={800} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+              <span className="absolute top-4 left-4 text-[11px] font-mono text-primary bg-background/80 backdrop-blur px-2.5 py-1 rounded-full border border-primary/30">
+                0{i + 1} · {p.role}
+              </span>
+              {p.link && (
+                <a href={p.link} target="_blank" rel="noreferrer" className="absolute top-4 right-4 h-10 w-10 grid place-items-center rounded-full bg-background/80 backdrop-blur border border-border hover:bg-primary hover:text-primary-foreground transition" aria-label="Open project">
+                  <ArrowUpRight size={16} />
+                </a>
+              )}
             </div>
-          </div>
-          <div>
-            <p className="font-mono text-xs text-primary mb-2">// 0{i + 1} · {p.role}</p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{p.title}</h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">{p.description}</p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {p.tags.map((t) => (
-                <span key={t} className="text-xs font-mono px-3 py-1.5 rounded-lg glass text-muted-foreground">
-                  {t}
-                </span>
-              ))}
+            <div className="p-7">
+              <h2 className="font-display text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{p.title}</h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">{p.description}</p>
+              <div className="flex flex-wrap gap-1.5 mb-5">
+                {p.tags?.map((t) => (
+                  <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-muted text-muted-foreground">{t}</span>
+                ))}
+              </div>
+              {p.link && (
+                <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">
+                  Visit project <ExternalLink size={14} />
+                </a>
+              )}
             </div>
-            {p.link && (
-              <a
-                href={p.link}
-                className="mt-6 inline-flex items-center gap-2 text-primary hover:gap-3 transition-all font-semibold"
-              >
-                Visit project <ExternalLink size={16} />
-              </a>
-            )}
-          </div>
-        </article>
-      ))}
-    </div>
-  </section>
-);
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Projects;
