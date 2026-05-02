@@ -1,12 +1,12 @@
 import profile from "@/assets/profile.jpg";
-import { Download, GraduationCap, MapPin, Briefcase, Languages } from "lucide-react";
+import { Download, GraduationCap, MapPin, Briefcase, Languages, Sparkles } from "lucide-react";
 
 const About = () => (
   <>
     <section className="container py-12">
       <p className="font-mono text-sm text-primary mb-2">// about me</p>
-      <h1 className="font-display text-5xl md:text-6xl font-bold">
-        A builder who lives at the <span className="text-gradient">intersection</span> of cloud, code & community.
+      <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05]">
+        A builder at the <span className="text-gradient">intersection</span> of cloud, code & community.
       </h1>
     </section>
 
