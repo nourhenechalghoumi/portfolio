@@ -80,7 +80,7 @@ export const Navbar = () => {
 
           <Link
             to="/contact"
-            className="hidden md:inline-flex items-center rounded-xl bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-lg hover:scale-105 transition-transform"
+            className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-8px_hsl(var(--primary)/0.6)] hover:scale-105 transition-transform shine"
           >
             Let's Talk
           </Link>
