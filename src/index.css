@@ -185,3 +185,11 @@
   0%, 100% { box-shadow: 0 0 30px hsl(188 95% 55% / 0.3); }
   50% { box-shadow: 0 0 60px hsl(188 95% 55% / 0.6), 0 0 80px hsl(268 85% 65% / 0.3); }
 }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes spinSlow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spinSlow 18s linear infinite; }
