@@ -118,7 +118,7 @@ export const services = [
   },
 ];
 
-export const experiences = [
+export const hobbies = [
   {
     role: "Esports Team Coordinator",
     company: "JSK Esports",
@@ -138,6 +138,9 @@ export const experiences = [
     ],
     skills: ["Management", "Esports Operations", "Communication", "Event Coordination", "Community"],
   },
+];
+
+export const experiences = [
   {
     role: "DevOps Engineer",
     company: "Eyeotech",
