@@ -214,3 +214,52 @@ export const skills = {
   "Web & Frameworks": ["React", "Next.js", "Node.js", "Express", "Spring Boot", "MongoDB"],
   "Automation": ["n8n", "Make", "Workflow automation"],
 };
+
+export const certifications = [
+  { name: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2024" },
+  { name: "Microsoft Azure Fundamentals (AZ-900)", issuer: "Microsoft", year: "2023" },
+  { name: "Docker & Kubernetes Essentials", issuer: "Linux Foundation", year: "2023" },
+  { name: "GitLab CI/CD Specialist", issuer: "GitLab", year: "2024" },
+  { name: "n8n Workflow Automation", issuer: "n8n.io", year: "2025" },
+  { name: "Prometheus & Grafana Monitoring", issuer: "CNCF", year: "2024" },
+];
+
+export const education = [
+  {
+    school: "ESPRIT — École Sup. Privée d'Ingénierie et de Technologies",
+    degree: "Diplôme d'Ingénieur — Génie Logiciel & Cloud",
+    period: "2021 — 2024",
+    location: "Tunis, Tunisia",
+  },
+  {
+    school: "IPEIB — Institut Préparatoire aux Études d'Ingénieurs",
+    degree: "Cycle préparatoire — Mathématiques-Physique",
+    period: "2019 — 2021",
+    location: "Bizerte, Tunisia",
+  },
+];
+
+export const testimonials = [
+  {
+    quote: "Nourhene rebuilt our deployment pipeline from scratch — what used to take hours now ships in minutes. Rare blend of rigor and speed.",
+    name: "Tech Lead",
+    role: "Eyeotech",
+  },
+  {
+    quote: "Beyond a coordinator, she's the operational backbone of JSK Esports. Players, sponsors and staff all run smoother because of her work.",
+    name: "Team Manager",
+    role: "JSK Esports",
+  },
+  {
+    quote: "She delivered our n8n automation suite ahead of schedule and with documentation we actually understood. Highly recommended.",
+    name: "Product Owner",
+    role: "Independent client",
+  },
+];
+
+export const faqs = [
+  { q: "What kind of projects do you take on?", a: "Cloud-native infrastructure, CI/CD pipelines, n8n automations and full-stack MERN/Next.js apps. I also advise teams on observability and reliability." },
+  { q: "Do you work remotely?", a: "Yes — I work remotely worldwide and on-site within Tunisia. Most engagements run async with weekly syncs." },
+  { q: "What is your typical engagement length?", a: "From 2-week sprints for focused automations to multi-month engineering retainers for platform & DevOps work." },
+  { q: "Can you collaborate with my existing team?", a: "Absolutely. I integrate with your existing repos, board and rituals — Git/GitLab, Jira/Linear, Slack/Discord." },
+];
