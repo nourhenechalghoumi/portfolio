@@ -33,8 +33,8 @@ const Hobbies = () => (
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
       <div className="container relative py-20 md:py-28">
         <p className="font-mono text-sm text-primary mb-3">// hobbies & passions</p>
-        <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.02] max-w-4xl">
-          Beyond the code — <span className="text-gradient">esports & community</span>.
+        <h1 className="font-display text-6xl md:text-8xl font-semibold leading-[0.95] max-w-4xl">
+          Beyond the code — <em className="text-gradient">esports &amp; community</em>.
         </h1>
         <p className="text-muted-foreground max-w-2xl text-lg mt-5">
           Outside engineering, I dedicate my time to esports operations, community building and

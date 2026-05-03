@@ -11,8 +11,8 @@ const Projects = () => {
   return (
     <section className="container py-12">
       <p className="font-mono text-sm text-primary mb-2">// projects</p>
-      <h1 className="font-display text-5xl md:text-6xl font-bold mb-4 leading-[1.05]">
-        Things I've <span className="text-gradient">built & shipped</span>.
+      <h1 className="font-display text-6xl md:text-7xl font-semibold mb-6 leading-[0.98]">
+        Things I've <em className="text-gradient">built &amp; shipped</em>.
       </h1>
       <p className="text-muted-foreground max-w-2xl text-lg">
         A selection of projects spanning cloud-native platforms, microservices, full-stack apps and esports.
