@@ -5,18 +5,36 @@ import { toast } from "sonner";
 const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
     const form = e.currentTarget;
     const data = new FormData(form);
-    const name = data.get("name");
-    const email = data.get("email");
-    const message = data.get("message");
-    const body = encodeURIComponent(`From: ${name} <${email}>\n\n${message}`);
-    window.location.href = `mailto:nourhene.chalgoumi@esprit.tn?subject=${encodeURIComponent("Portfolio contact from " + name)}&body=${body}`;
-    toast.success("Opening your email client…");
-    setTimeout(() => setSubmitting(false), 800);
+    const name = String(data.get("name") || "");
+    const email = String(data.get("email") || "");
+    const message = String(data.get("message") || "");
+
+    try {
+      const res = await fetch('/api/send-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const json = await res.json();
+      if (res.ok) {
+        toast.success('Message sent — I will reply to ' + email);
+        form.reset();
+      } else {
+        console.error(json);
+        toast.error(json?.error || 'Failed to send message');
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error('Failed to send message');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
