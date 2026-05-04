@@ -22,7 +22,6 @@ const Home = () => {
                   <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
                   <span className="relative h-2 w-2 rounded-full bg-primary" />
                 </span>
-                Available Q1 2026 · Remote / Hybrid
               </span>
 
               <h1 className="mt-6 font-display text-6xl md:text-7xl lg:text-8xl font-semibold leading-[0.95] tracking-tight">
@@ -74,20 +73,8 @@ const Home = () => {
                   <img src={profile} alt="Nourhene Chalghoumi" className="rounded-[1.6rem] w-72 h-80 md:w-80 md:h-96 object-cover" width={400} height={480} />
                 </div>
 
-                <div className="absolute -left-6 top-10 glass rounded-2xl px-3 py-2 flex items-center gap-2 text-xs font-mono animate-float shadow-card">
-                  <span className="h-7 w-7 grid place-items-center rounded-lg bg-primary/10 text-primary"><Cpu size={14} /></span>
-                  <div>
-                    <div className="text-[10px] text-muted-foreground">CPU load</div>
-                    <div className="font-semibold">12%</div>
-                  </div>
-                </div>
-                <div className="absolute -right-6 top-1/3 glass rounded-2xl px-3 py-2 flex items-center gap-2 text-xs font-mono shadow-card" style={{ animation: "float 6s ease-in-out infinite", animationDelay: "1s" }}>
-                  <span className="h-7 w-7 grid place-items-center rounded-lg bg-secondary/20 text-secondary"><GitBranch size={14} /></span>
-                  <div>
-                    <div className="text-[10px] text-muted-foreground">deploys / wk</div>
-                    <div className="font-semibold">37</div>
-                  </div>
-                </div>
+                
+                
                 <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 glass rounded-full px-4 py-2 flex items-center gap-2 text-xs font-mono whitespace-nowrap">
                   <Sparkles size={14} className="text-primary" /> Open to work
                 </div>
@@ -114,7 +101,6 @@ const Home = () => {
       <section className="container py-24">
         <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
           <div>
-            <p className="font-mono text-sm text-primary mb-2">// what I do</p>
             <h2 className="font-display text-5xl md:text-6xl font-semibold max-w-2xl leading-[1.05]">
               Services for <em className="text-gradient">modern teams</em>
             </h2>
@@ -148,7 +134,6 @@ const Home = () => {
       <section className="container py-24">
         <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
           <div>
-            <p className="font-mono text-sm text-primary mb-2">// selected work</p>
             <h2 className="font-display text-5xl md:text-6xl font-semibold leading-[1.05]">Featured <em className="text-gradient">Projects</em></h2>
           </div>
           <Link to="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all">
@@ -185,7 +170,6 @@ const Home = () => {
       {/* PROCESS */}
       <section className="container py-24">
         <div className="text-center mb-16">
-          <p className="font-mono text-sm text-primary mb-2">// how I work</p>
           <h2 className="font-display text-5xl md:text-6xl font-semibold max-w-2xl mx-auto leading-[1.05]">
             A simple process,<br /><em className="text-gradient">obsessive execution</em>
           </h2>
@@ -210,7 +194,6 @@ const Home = () => {
       {/* TESTIMONIALS */}
       <section className="container py-24">
         <div className="mb-12">
-          <p className="font-mono text-sm text-primary mb-2">// kind words</p>
           <h2 className="font-display text-5xl md:text-6xl font-semibold leading-[1.05]">What people <em className="text-gradient">say</em></h2>
         </div>
         <div className="grid md:grid-cols-3 gap-5">
@@ -235,7 +218,6 @@ const Home = () => {
       {/* SKILLS */}
       <section className="container py-24">
         <div className="mb-12">
-          <p className="font-mono text-sm text-primary mb-2">// stack</p>
           <h2 className="font-display text-5xl md:text-6xl font-semibold leading-[1.05]">Tools I use <em className="text-gradient">daily</em></h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -261,7 +243,6 @@ const Home = () => {
         <div className="relative glass rounded-[2.5rem] p-10 md:p-16 text-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-radial -z-10" />
           <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-primary opacity-10 blur-3xl -z-10" />
-          <p className="font-mono text-sm text-primary mb-3">// let's talk</p>
           <h2 className="font-display text-4xl md:text-6xl font-semibold max-w-3xl mx-auto leading-[1.05]">
             Have a project? <em className="text-gradient">Let's build it.</em>
           </h2>

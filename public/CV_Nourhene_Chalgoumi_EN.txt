@@ -1,0 +1,94 @@
+NOURHENE CHALGOUMI
+Cloud & DevOps Engineer
+
+CONTACT
+Email: nourhene@example.com
+LinkedIn: linkedin.com/in/nourhene-chalghoumi
+GitHub: github.com/nourhenechalghoumi
+
+PROFESSIONAL SUMMARY
+Cloud & DevOps Engineer with full-stack expertise, specialized in CI/CD pipeline implementation, infrastructure automation, and cloud-native application deployment. Proven track record of reducing deployment times by 50%, maintaining 98%+ system uptime, and leading technical teams through complex infrastructure transformations.
+
+PROFESSIONAL EXPERIENCE
+
+DevOps Engineer
+Eyeotech | Sep 2024 - Present
+- Implemented GitLab CI/CD pipelines, reducing deployment time by 50%
+- Managed Kubernetes clusters maintaining 98% uptime across infrastructure
+- Automated infrastructure provisioning with Terraform and Ansible
+- Configured monitoring and alerting systems using Prometheus and Grafana
+- Mentored junior team members on DevOps best practices
+
+PFE Intern - Platform Development
+Eyeotech | Feb - Aug 2024
+- Built cloud-native CV platform using Next.js and Node.js
+- Containerized application with Docker and deployed on OpenStack
+- Implemented JWT-based role-based access control (RBAC)
+- Increased user engagement by 30% through performance optimization
+- Achieved 45% reduction in load times
+
+System Optimization Intern
+Focus | Jul - Sep 2021
+- Boosted system efficiency by 20% using Harbor and vROps
+- Managed virtual environments to optimize resource allocation
+- Implemented containerization best practices
+
+Remote Monitoring Intern
+OEP | Apr - Jun 2021
+- Deployed monitoring solutions reducing downtime by 15%
+- Configured alert systems for critical infrastructure health
+
+IT Support Intern
+Leoni Mateur | Aug - Sep 2020
+- Reduced network issues by 25%
+- Supported over 50 end-users through technical troubleshooting
+
+Service Improvement Intern
+Tunisie Telecom | Jul - Sep 2019
+- Enhanced service reliability by 15%
+- Improved documentation processes
+
+TECHNICAL SKILLS
+
+Programming Languages
+Python, JavaScript, TypeScript, Java, SQL, Bash
+
+DevOps & Cloud
+Docker, Kubernetes, Terraform, Ansible, GitLab CI/CD, Jenkins, OpenStack, Azure, AWS
+
+Monitoring & Observability
+Prometheus, Grafana, ELK Stack, Zabbix, Jaeger
+
+Web Development
+React, Next.js, Node.js, Express, Spring Boot, MongoDB
+
+Automation & Integration
+n8n, Make, API Integration, Workflow Automation
+
+CERTIFICATIONS
+- AWS Certified Cloud Practitioner (2024)
+- Microsoft Azure Fundamentals (AZ-900) (2023)
+- Docker & Kubernetes Essentials (2023)
+- GitLab CI/CD Specialist (2024)
+- n8n Workflow Automation (2025)
+- Prometheus & Grafana Monitoring (2024)
+
+EDUCATION
+Diplôme d'Ingénieur - Génie Logiciel & Cloud
+ESPRIT - École Sup. Privée d'Ingénierie et de Technologies | 2021-2024
+Tunis, Tunisia
+
+Cycle Préparatoire - Mathématiques-Physique
+IPEIB - Institut Préparatoire aux Études d'Ingénieurs | 2019-2021
+Bizerte, Tunisia
+
+KEY PROJECTS
+- Jolt CV Platform: Cloud-native platform with JWT RBAC and OpenStack deployment
+- CareerTN Microservices Migration: Reduced API latency by 75% through microservices architecture
+- Visigate: Visitor management system with real-time tracking and RBAC
+- E-commerce Platform: Full-stack MERN application with Stripe integration
+
+LANGUAGES
+English - Fluent
+French - Native
+Arabic - Native

@@ -3,7 +3,6 @@ import { Building2, MapPin, Calendar } from "lucide-react";
 
 const Experience = () => (
   <section className="container py-12">
-    <p className="font-mono text-sm text-primary mb-2">// experience</p>
     <h1 className="font-display text-6xl md:text-7xl font-semibold mb-6 leading-[0.98]">
       My professional <em className="text-gradient">journey</em>.
     </h1>

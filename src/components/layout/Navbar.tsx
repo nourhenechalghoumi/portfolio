@@ -2,6 +2,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const links = [
   { to: "/", label: "Home" },
@@ -79,12 +80,15 @@ export const Navbar = () => {
             ))}
           </ul>
 
-          <Link
-            to="/contact"
-            className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-8px_hsl(var(--primary)/0.6)] hover:scale-105 transition-transform shine"
-          >
-            Let's Talk
-          </Link>
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-8px_hsl(var(--primary)/0.6)] hover:scale-105 transition-transform shine"
+            >
+              Let's Talk
+            </Link>
+          </div>
 
           <button
             className="md:hidden p-2 text-foreground"
@@ -117,6 +121,9 @@ export const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className="mt-4 pt-4 border-t border-border flex gap-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </div>

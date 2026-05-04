@@ -1,0 +1,94 @@
+NOURHENE CHALGOUMI
+Ingénieur Cloud & DevOps
+
+CONTACT
+E-mail: nourhene@example.com
+LinkedIn: linkedin.com/in/nourhene-chalghoumi
+GitHub: github.com/nourhenechalghoumi
+
+RÉSUMÉ PROFESSIONNEL
+Ingénieur Cloud & DevOps avec expertise full-stack, spécialisé dans l'implémentation de pipelines CI/CD, l'automatisation d'infrastructure et le déploiement d'applications cloud-native. Expérience avérée dans la réduction des temps de déploiement de 50%, le maintien d'une disponibilité système de 98%+ et la direction de teams techniques à travers des transformations d'infrastructure complexes.
+
+EXPÉRIENCE PROFESSIONNELLE
+
+Ingénieur DevOps
+Eyeotech | Sep 2024 - Présent
+- Implémentation de pipelines GitLab CI/CD, réduisant le temps de déploiement de 50%
+- Gestion de clusters Kubernetes maintenant 98% de disponibilité infrastructure
+- Automatisation du provisioning d'infrastructure avec Terraform et Ansible
+- Configuration de systèmes de monitoring et d'alerting avec Prometheus et Grafana
+- Mentorat des junior team members sur les best practices DevOps
+
+Stagiaire PFE - Développement de Plateforme
+Eyeotech | Fév - Août 2024
+- Construction de plateforme CV cloud-native avec Next.js et Node.js
+- Containerisation d'application avec Docker et déploiement sur OpenStack
+- Implémentation de contrôle d'accès basé sur les rôles (RBAC) JWT
+- Augmentation de l'engagement utilisateur de 30% par optimisation de performance
+- Réduction de 45% des temps de chargement
+
+Stagiaire Optimisation Système
+Focus | Juil - Sep 2021
+- Amélioration de l'efficacité système de 20% avec Harbor et vROps
+- Gestion d'environnements virtuels pour optimiser l'allocation de ressources
+- Implémentation de best practices containerization
+
+Stagiaire Monitoring à Distance
+OEP | Avr - Juin 2021
+- Déploiement de solutions de monitoring réduisant les downtime de 15%
+- Configuration de systèmes d'alerte pour la santé d'infrastructure critique
+
+Stagiaire Support IT
+Leoni Mateur | Août - Sep 2020
+- Réduction des problèmes réseau de 25%
+- Support de plus de 50 end-users par troubleshooting technique
+
+Stagiaire Amélioration de Services
+Tunisie Telecom | Juil - Sep 2019
+- Amélioration de la fiabilité des services de 15%
+- Amélioration des processus de documentation
+
+COMPÉTENCES TECHNIQUES
+
+Langages de Programmation
+Python, JavaScript, TypeScript, Java, SQL, Bash
+
+DevOps & Cloud
+Docker, Kubernetes, Terraform, Ansible, GitLab CI/CD, Jenkins, OpenStack, Azure, AWS
+
+Monitoring & Observabilité
+Prometheus, Grafana, ELK Stack, Zabbix, Jaeger
+
+Développement Web
+React, Next.js, Node.js, Express, Spring Boot, MongoDB
+
+Automatisation & Intégration
+n8n, Make, Intégration API, Automatisation de Workflows
+
+CERTIFICATIONS
+- AWS Certified Cloud Practitioner (2024)
+- Microsoft Azure Fundamentals (AZ-900) (2023)
+- Docker & Kubernetes Essentials (2023)
+- GitLab CI/CD Specialist (2024)
+- n8n Workflow Automation (2025)
+- Prometheus & Grafana Monitoring (2024)
+
+FORMATION
+Diplôme d'Ingénieur - Génie Logiciel & Cloud
+ESPRIT - École Sup. Privée d'Ingénierie et de Technologies | 2021-2024
+Tunis, Tunisia
+
+Cycle Préparatoire - Mathématiques-Physique
+IPEIB - Institut Préparatoire aux Études d'Ingénieurs | 2019-2021
+Bizerte, Tunisia
+
+PROJETS CLÉS
+- Plateforme Jolt CV: Plateforme cloud-native avec RBAC JWT et déploiement OpenStack
+- Migration Microservices CareerTN: Réduction de latence API de 75% via architecture microservices
+- Visigate: Système de gestion des visiteurs avec tracking temps réel et RBAC
+- Plateforme E-commerce: Application full-stack MERN avec intégration Stripe
+
+LANGUES
+Anglais - Courant
+Français - Natif
+Arabe - Natif

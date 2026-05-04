@@ -1,6 +1,7 @@
 import profile from "@/assets/profile.jpg";
-import { Download, GraduationCap, MapPin, Briefcase, Languages, Award, Calendar, Mail, Phone } from "lucide-react";
+import { GraduationCap, MapPin, Briefcase, Languages, Award, Calendar, Mail, Phone } from "lucide-react";
 import { certifications, education } from "@/data/portfolio";
+import CVDownload from "@/components/CVDownload";
 
 const values = [
   { t: "Reliability first", d: "Systems that survive Friday at 5pm. SLAs aren't aspirations — they're contracts." },
@@ -12,7 +13,6 @@ const values = [
 const About = () => (
   <>
     <section className="container py-12 md:py-16">
-      <p className="font-mono text-sm text-primary mb-2">// about me</p>
       <h1 className="font-display text-6xl md:text-8xl font-semibold leading-[0.95]">
         At the <em className="text-gradient">intersection</em><br />
         of cloud, code &amp; community.
@@ -32,13 +32,9 @@ const About = () => (
             <p className="flex items-center gap-2 text-muted-foreground"><Mail size={16} className="text-primary" /> nourhene.chalgoumi@esprit.tn</p>
             <p className="flex items-center gap-2 text-muted-foreground"><Phone size={16} className="text-primary" /> +216 58 939 003</p>
           </div>
-          <a
-            href="/cv-nourhene-chalghoumi-fr.pdf"
-            download
-            className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-primary px-6 py-3 font-semibold text-primary-foreground shadow-lg hover:scale-105 transition-transform"
-          >
-            <Download size={18} /> Télécharger CV (FR)
-          </a>
+          <div className="mt-6">
+            <CVDownload />
+          </div>
         </div>
       </div>
 
