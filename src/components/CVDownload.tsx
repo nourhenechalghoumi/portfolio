@@ -7,7 +7,7 @@ const CVDownload = () => {
 
   const downloadCV = (lang: "en" | "fr") => {
     const fileMap = {
-      en: "CV_Nourhene_Chalgoumi_EN.pdf",
+      en: "CV_Nourhene_Chalgoumi_EN.pdf",  // Add this file to public/
       fr: "cv-nourhene-chalghoumi-fr.pdf"
     };
     
