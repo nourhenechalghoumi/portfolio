@@ -1,5 +1,5 @@
 import { hobbies } from "@/data/portfolio";
-import { Building2, MapPin, Calendar, Gamepad2, Trophy, Users, Headphones, Radio, ShieldCheck, Sparkles, Facebook, Twitter, Instagram } from "lucide-react";
+import { Building2, MapPin, Calendar, Gamepad2, Trophy, Users, Headphones, Radio, ShieldCheck, Sparkles, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import arenaImg from "@/assets/hobbies/esports-arena.jpg";
 import trophyImg from "@/assets/hobbies/tournament.jpg";
 import teamImg from "@/assets/hobbies/team-coord.jpg";
@@ -252,6 +252,15 @@ const Hobbies = () => (
                 >
                   <Instagram size={18} />
                   <span className="text-sm font-semibold">Instagram</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/jsk-esports/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full px-4 py-2.5 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 hover:border-primary/50 transition-all hover:-translate-y-0.5"
+                >
+                  <Linkedin size={18} />
+                  <span className="text-sm font-semibold">LinkedIn</span>
                 </a>
               </div>
             </div>
