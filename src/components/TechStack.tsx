@@ -1,6 +1,6 @@
 import { 
   Package,
-  Docker, 
+  Cpu,
   Cloud, 
   GitBranch, 
   Monitor, 
@@ -22,7 +22,7 @@ interface TechItem {
 const TechStack = () => {
   const technologies: TechItem[] = [
     { name: "Kubernetes", icon: <Package className="w-full h-full" />, color: "bg-blue-600/20" },
-    { name: "Docker", icon: <Docker className="w-full h-full" />, color: "bg-blue-400/20" },
+    { name: "Docker", icon: <Cpu className="w-full h-full" />, color: "bg-blue-400/20" },
     { name: "Terraform", icon: <Box className="w-full h-full" />, color: "bg-purple-600/20" },
     { name: "GitLab CI", icon: <GitBranch className="w-full h-full" />, color: "bg-orange-600/20" },
     { name: "OpenStack", icon: <Cloud className="w-full h-full" />, color: "bg-red-600/20" },
