@@ -18,12 +18,12 @@ const TechStack = () => {
     { name: "Grafana", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" },
     { name: "n8n", logo: "https://cdn.raiolanetworks.com/blog/wp-content/uploads/n8n.png?width=599&height=599" },
     { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
-    { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" },
+    { name: "Node.js", logo: "https://tse3.mm.bing.net/th/id/OIP._q9isrTsxvqvEvcS5EBY7AHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" },
     { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg" },
-    { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg" },
+    { name: "AWS", logo: "https://tse3.mm.bing.net/th/id/OIP._xhcBMX8M-sgXAOzABNFTAHaEW?rs=1&pid=ImgDetMain&o=7&rm=3" },
     { name: "Azure", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-plain.svg" },
     { name: "Ansible", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg" },
-    { name: "Jenkins", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-plain.svg" },
+    { name: "Jenkins", logo: "https://tse3.mm.bing.net/th/id/OIP.6CAjMHc3i0oZ4hArgKyewAHaHk?rs=1&pid=ImgDetMain&o=7&rm=3" },
     { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
   ];
 
