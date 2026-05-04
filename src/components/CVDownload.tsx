@@ -1,14 +1,11 @@
-import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
 
 const CVDownload = () => {
-  const { language } = useLanguage();
-
   const downloadCV = (lang: "en" | "fr") => {
     const fileMap = {
-      en: "CV_Nourhene_Chalgoumi_EN.pdf",  // Add this file to public/
-      fr: "cv-nourhene-chalghoumi-fr.pdf"
+      en: "Nourhene_CHALGHOUMI_EN.pdf",
+      fr: "Nourhene_CHALGHOUMI_FR.pdf"
     };
     
     const fileName = fileMap[lang];
@@ -25,7 +22,7 @@ const CVDownload = () => {
     <div className="flex flex-col gap-3">
       <div className="flex items-center gap-2">
         <FileText size={18} className="text-primary" />
-        <h3 className="font-semibold">{language === "en" ? "Download CV" : "Télécharger CV"}</h3>
+        <h3 className="font-semibold">Download CV</h3>
       </div>
       <div className="flex gap-2">
         <Button

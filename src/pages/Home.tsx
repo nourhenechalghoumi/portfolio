@@ -43,7 +43,7 @@ const Home = () => {
                   Explore work
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
                 </Link>
-                <a href="/cv-nourhene-chalghoumi-fr.pdf" download className="inline-flex items-center gap-2 rounded-full glass px-7 py-3.5 font-semibold hover:text-primary hover:-translate-y-0.5 transition-all">
+                <a href="/Nourhene_CHALGHOUMI_FR.pdf" download className="inline-flex items-center gap-2 rounded-full glass px-7 py-3.5 font-semibold hover:text-primary hover:-translate-y-0.5 transition-all">
                   <Download size={18} /> CV (FR)
                 </a>
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full px-5 py-3.5 font-semibold text-muted-foreground hover:text-foreground transition-colors">
@@ -67,17 +67,9 @@ const Home = () => {
 
             <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative">
-                <div className="absolute -inset-8 rounded-full conic-glow animate-spin-slow opacity-40" />
-                <div className="absolute -inset-2 bg-gradient-primary opacity-25 blur-3xl rounded-full" />
 
-                <div className="relative rounded-[2rem] overflow-hidden glass p-1.5 noise">
-                  <img src={profile} alt="Nourhene Chalghoumi" className="rounded-[1.6rem] w-72 h-80 md:w-80 md:h-96 object-cover" width={400} height={480} />
-                </div>
-
-                
-                
-                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 glass rounded-full px-4 py-2 flex items-center gap-2 text-xs font-mono whitespace-nowrap">
-                  <Sparkles size={14} className="text-primary" /> Open to work
+                <div className="relative rounded-[2rem] overflow-hidden w-72 h-80 md:w-80 md:h-96">
+                  <img src={profile} alt="Nourhene Chalghoumi" className="rounded-[2rem] w-full h-full object-cover" width={400} height={480} />
                 </div>
               </div>
             </div>

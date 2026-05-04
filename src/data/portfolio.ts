@@ -299,8 +299,14 @@ export const certifications = [
 
 export const education = [
   {
-    school: "ESPRIT — École Sup. Privée d'Ingénierie et de Technologies",
-    degree: "Diplôme d'Ingénieur — Génie Logiciel & Cloud",
+    school: "ESPRIT — Private Higher School of Engineering and Technology",
+    degree: "Computer Engineering Degree — Software Engineering & Cloud",
+    period: "2021 — 2024",
+    location: "Tunis, Tunisia",
+  },
+  {
+    school: " ISSAT Mateur —  Higher Institute of Applied Sciences and Technology of Mateur",
+    degree: "B.Sc. Networks & Telecom",
     period: "2021 — 2024",
     location: "Tunis, Tunisia",
   },
@@ -314,7 +320,7 @@ export const testimonials = [
   },
   {
     quote: "Beyond a coordinator, she's the operational backbone of JSK Esports. Players, sponsors and staff all run smoother because of her work.",
-    name: "Team Manager",
+    name: "Dhirar Alouini",
     role: "JSK Esports",
   },
   {
