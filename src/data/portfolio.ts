@@ -304,12 +304,6 @@ export const education = [
     period: "2021 — 2024",
     location: "Tunis, Tunisia",
   },
-  {
-    school: "IPEIB — Institut Préparatoire aux Études d'Ingénieurs",
-    degree: "Cycle préparatoire — Mathématiques-Physique",
-    period: "2019 — 2021",
-    location: "Bizerte, Tunisia",
-  },
 ];
 
 export const testimonials = [
