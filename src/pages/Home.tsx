@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Download, Sparkles, Zap, Shield, Cpu, Cloud, GitBranch, Workflow, Quote, Star } from "lucide-react";
 import profile from "@/assets/profile.jpg";
 import { skills, projects, services, testimonials } from "@/data/portfolio";
+import TechStack from "@/components/TechStack";
 
 const stack = ["Kubernetes", "Docker", "Terraform", "GitLab CI", "OpenStack", "Prometheus", "Grafana", "n8n", "Next.js", "Node.js", "MongoDB", "AWS", "Azure", "Ansible", "Jenkins", "React"];
 
@@ -83,16 +84,10 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Marquee */}
-        <div className="relative border-t border-border/60 bg-card/30 backdrop-blur-sm overflow-hidden">
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
-          <div className="marquee py-5">
-            {[...stack, ...stack].map((s, i) => (
-              <span key={i} className="font-mono text-sm text-muted-foreground whitespace-nowrap flex items-center gap-3">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary/60" /> {s}
-              </span>
-            ))}
+        {/* Tech Stack */}
+        <div className="relative border-t border-border/60 bg-card/30 backdrop-blur-sm">
+          <div className="container py-8">
+            <TechStack />
           </div>
         </div>
       </section>

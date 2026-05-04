@@ -1,18 +1,21 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 
 const CVDownload = () => {
   const { language } = useLanguage();
 
   const downloadCV = (lang: "en" | "fr") => {
-    const fileName = lang === "en" 
-      ? "CV_Nourhene_Chalgoumi_EN.txt"
-      : "CV_Nourhene_Chalgoumi_FR.txt";
+    const fileMap = {
+      en: "CV_Nourhene_Chalgoumi_EN.pdf",
+      fr: "cv-nourhene-chalghoumi-fr.pdf"
+    };
     
+    const fileName = fileMap[lang];
     const link = document.createElement("a");
-    link.href = `//${fileName}`;
+    link.href = `/${fileName}`;
     link.download = fileName;
+    link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -20,7 +23,10 @@ const CVDownload = () => {
 
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="font-semibold">Download CV</h3>
+      <div className="flex items-center gap-2">
+        <FileText size={18} className="text-primary" />
+        <h3 className="font-semibold">{language === "en" ? "Download CV" : "Télécharger CV"}</h3>
+      </div>
       <div className="flex gap-2">
         <Button
           onClick={() => downloadCV("en")}
@@ -29,7 +35,7 @@ const CVDownload = () => {
           className="gap-2"
         >
           <Download size={16} />
-          English
+          English (PDF)
         </Button>
         <Button
           onClick={() => downloadCV("fr")}
@@ -38,7 +44,7 @@ const CVDownload = () => {
           className="gap-2"
         >
           <Download size={16} />
-          Français
+          Français (PDF)
         </Button>
       </div>
     </div>

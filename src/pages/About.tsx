@@ -2,6 +2,7 @@ import profile from "@/assets/profile.jpg";
 import { GraduationCap, MapPin, Briefcase, Languages, Award, Calendar, Mail, Phone } from "lucide-react";
 import { certifications, education } from "@/data/portfolio";
 import CVDownload from "@/components/CVDownload";
+import DiplomaDownload from "@/components/DiplomaDownload";
 
 const values = [
   { t: "Reliability first", d: "Systems that survive Friday at 5pm. SLAs aren't aspirations — they're contracts." },
@@ -85,6 +86,11 @@ const About = () => (
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Diplomas */}
+        <div className="pt-6">
+          <DiplomaDownload />
         </div>
 
         {/* Certifications */}
