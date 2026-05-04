@@ -1,42 +1,27 @@
-import { 
-  Package,
-  Cpu,
-  Cloud, 
-  GitBranch, 
-  Monitor, 
-  LineChart, 
-  Database, 
-  Code2, 
-  Zap,
-  Shield,
-  Box,
-  Workflow
-} from "lucide-react";
-
 interface TechItem {
   name: string;
-  icon: React.ReactNode;
+  logo: string;
   color: string;
 }
 
 const TechStack = () => {
   const technologies: TechItem[] = [
-    { name: "Kubernetes", icon: <Package className="w-full h-full" />, color: "bg-blue-600/20" },
-    { name: "Docker", icon: <Cpu className="w-full h-full" />, color: "bg-blue-400/20" },
-    { name: "Terraform", icon: <Box className="w-full h-full" />, color: "bg-purple-600/20" },
-    { name: "GitLab CI", icon: <GitBranch className="w-full h-full" />, color: "bg-orange-600/20" },
-    { name: "OpenStack", icon: <Cloud className="w-full h-full" />, color: "bg-red-600/20" },
-    { name: "Prometheus", icon: <Monitor className="w-full h-full" />, color: "bg-yellow-600/20" },
-    { name: "Grafana", icon: <LineChart className="w-full h-full" />, color: "bg-orange-500/20" },
-    { name: "n8n", icon: <Workflow className="w-full h-full" />, color: "bg-indigo-600/20" },
-    { name: "Next.js", icon: <Code2 className="w-full h-full" />, color: "bg-slate-700/20" },
-    { name: "Node.js", icon: <Zap className="w-full h-full" />, color: "bg-green-600/20" },
-    { name: "MongoDB", icon: <Database className="w-full h-full" />, color: "bg-green-500/20" },
-    { name: "AWS", icon: <Cloud className="w-full h-full" />, color: "bg-amber-600/20" },
-    { name: "Azure", icon: <Cloud className="w-full h-full" />, color: "bg-blue-500/20" },
-    { name: "Ansible", icon: <Workflow className="w-full h-full" />, color: "bg-red-700/20" },
-    { name: "Jenkins", icon: <Shield className="w-full h-full" />, color: "bg-red-600/20" },
-    { name: "React", icon: <Code2 className="w-full h-full" />, color: "bg-cyan-600/20" },
+    { name: "Kubernetes", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg", color: "bg-blue-600/10" },
+    { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg", color: "bg-blue-400/10" },
+    { name: "Terraform", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-plain.svg", color: "bg-purple-600/10" },
+    { name: "GitLab CI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-plain.svg", color: "bg-orange-600/10" },
+    { name: "OpenStack", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openstack/openstack-plain.svg", color: "bg-red-600/10" },
+    { name: "Prometheus", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg", color: "bg-yellow-600/10" },
+    { name: "Grafana", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg", color: "bg-orange-500/10" },
+    { name: "n8n", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg", color: "bg-indigo-600/10" },
+    { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", color: "bg-slate-700/10" },
+    { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg", color: "bg-green-600/10" },
+    { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg", color: "bg-green-500/10" },
+    { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg", color: "bg-amber-600/10" },
+    { name: "Azure", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-plain.svg", color: "bg-blue-500/10" },
+    { name: "Ansible", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-plain.svg", color: "bg-red-700/10" },
+    { name: "Jenkins", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-plain.svg", color: "bg-red-600/10" },
+    { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", color: "bg-cyan-600/10" },
   ];
 
   return (
@@ -48,8 +33,13 @@ const TechStack = () => {
             className="group relative flex flex-col items-center gap-2 p-3 rounded-lg glass hover:border-primary/50 hover:-translate-y-1 transition-all"
             title={tech.name}
           >
-            <div className={`${tech.color} rounded-lg p-3 h-10 w-10 flex items-center justify-center text-primary/80`}>
-              {tech.icon}
+            <div className={`${tech.color} rounded-lg p-3 h-12 w-12 flex items-center justify-center`}>
+              <img 
+                src={tech.logo} 
+                alt={tech.name}
+                className="h-8 w-8 object-contain"
+                loading="lazy"
+              />
             </div>
             <span className="text-xs font-medium text-center leading-tight max-w-full truncate">
               {tech.name}
@@ -58,6 +48,10 @@ const TechStack = () => {
         ))}
       </div>
     </div>
+  );
+};
+
+export default TechStack;
   );
 };
 

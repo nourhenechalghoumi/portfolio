@@ -1,28 +1,39 @@
 # Diploma Files Setup
 
-To enable diploma downloads on the portfolio website, you need to add the following PDF files to a `diplomas` folder in the `public` directory:
+To enable diploma display and downloads on the portfolio website, you need to add the following image files to a `diplomas` folder in the `public` directory:
 
 ## Required Files
 
 Create the folder structure:
 ```
 public/diplomas/
-├── diplome-ingenieur-esprit-2024.pdf    (Engineering degree from ESPRIT - 2024)
-└── diplome-bachelor-issat-2021.pdf      (Bachelor's degree from ISSAT - 2021)
+├── ING-diploma.png          (Engineering degree from ESPRIT - 2024)
+└── licence-diploma.png      (Bachelor's degree from ISSAT - 2021)
 ```
 
 ## Instructions
 
-1. Create a new folder `diplomas` inside the `public` directory
-2. Add your diploma PDF files with the exact names listed above
-3. The files will be automatically available for download from:
-   - About page (Diplomas section)
-   - CV Download component
+1. Create a new folder `diplomas` inside the `public` directory (if not already created)
+2. Add your diploma image files with the exact names listed above:
+   - **ING-diploma.png** - Your Engineering degree certificate/diploma
+   - **licence-diploma.png** - Your Bachelor's degree certificate/diploma
+3. The files will be automatically displayed on the About page with:
+   - Diploma images shown as cards in a grid
+   - Download buttons for each diploma
+   - Bilingual support (French/English)
 
 ## Supported Formats
-- PDF files (.pdf)
-- Keep file sizes under 10MB for optimal performance
+- PNG files (.png) - Recommended for quality and transparency
+- Recommended dimensions: 1024x1440px (portrait)
+- Maximum file size: 5MB per file
 
 ## File Naming Convention
-- Use lowercase with hyphens: `diplome-[type]-[school]-[year].pdf`
-- Keep names short and descriptive
+- Use exact names: `ING-diploma.png` and `licence-diploma.png`
+- Case-sensitive on Linux/Mac servers
+
+## Features
+✓ Diploma images displayed in responsive grid (1-2 columns based on screen size)
+✓ Download button for each diploma  
+✓ Bilingual labels (French/English)
+✓ Hover effects and smooth transitions
+✓ Mobile-friendly layout
